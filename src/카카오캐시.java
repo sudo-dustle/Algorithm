@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public class Solution {
+public class 카카오캐시 {
     static final int hit = 1;
     static final int miss = 5;
 

@@ -1,0 +1,27 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+//12시 15분 ~ 12시 28분
+public class 숫자카드게임 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int N = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(st.nextToken());
+
+        int[] arr = new int[N];
+        int answer = Integer.MIN_VALUE;
+        for (int i = 0; i < N; i++) {
+            st = new StringTokenizer(br.readLine());
+            arr[i] = Integer.MAX_VALUE;
+            for (int j = 0; j < M; j++) {
+                arr[i] = Integer.min(Integer.parseInt(st.nextToken()), arr[i]);
+            }
+            answer = Integer.max(answer, arr[i]);
+        }
+
+        System.out.println(answer);
+    }
+}
