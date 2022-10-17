@@ -55,7 +55,6 @@ public class 연산자끼워넣기 {
             math[1]++;
         }
 
-
         if(math[2] > 0) {
             int t = tmp * num[idx];
             math[2]--;
