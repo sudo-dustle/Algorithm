@@ -30,7 +30,7 @@ public class 숫자판점프 {
     }
 
     public static void recursive(int x, int y, String strings) {
-        if(strings.length() == 6) {
+        if(strings.length() >= 6) {
             digitsSet.add(strings);
             return;
         }
