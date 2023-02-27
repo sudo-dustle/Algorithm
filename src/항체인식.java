@@ -48,7 +48,6 @@ public class 항체인식 {
                     if (isVaccine()) {
                         break;
                     } else {
-                        visited = new boolean[N][M];
                         answer = "NO";
                     }
                 }
